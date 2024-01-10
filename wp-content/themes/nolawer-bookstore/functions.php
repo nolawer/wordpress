@@ -40,6 +40,7 @@ function nbs_register_post_type() {
         'public' => true,
         'menu_position' => 3,
         'menu_icon' => 'dashicons-book',
+		'has_archive' => true,
 
     );
     register_post_type('book', $args);
