@@ -1,13 +1,11 @@
-<div>
+<?php get_header(); ?>
+
+<!-- <div>
     <a href="<?= get_post_type_archive_link('book'); ?>">책 목록</a>
-</div>
+</div> -->
 
 
 <?php
-
-echo get_post_type_archive_link('book');
-
-// var_dump($wp_query);
 
 if (have_posts()) {
     while(have_posts()) {
@@ -16,3 +14,7 @@ if (have_posts()) {
         the_permalink();
     }
 }
+
+?>
+
+<?php get_footer(); ?>
